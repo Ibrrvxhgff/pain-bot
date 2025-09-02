@@ -26,7 +26,7 @@ this.uptime = this.uptime || Date.now();
 if (!chatUpdate) return
 this.pushMessage(chatUpdate.messages).catch(console.error)
 let m = chatUpdate.messages[chatUpdate.messages.length - 1]
-if (!m || m.key?.fromMe) return;
+//if (!m || m.key?.fromMe) return;
 if (!m) return
 if (global.db.data == null)
 await global.loadDatabase()
